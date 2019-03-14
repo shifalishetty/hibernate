@@ -1,0 +1,9 @@
+git bisect start
+# good: [bdad25abfe3e7e8fdfc2b369be5b3216965fd950] prep 5.3.0.Final
+git bisect good bdad25abfe3e7e8fdfc2b369be5b3216965fd950
+# bad: [7430cdafcf520d6d7d40d362fdc42c6a5d8b141e] 5.3.1
+git bisect bad 7430cdafcf520d6d7d40d362fdc42c6a5d8b141e
+# good: [45a3b39c401bc3a72eed474af06deff2d143a9ac] HHH-12612 - Fix JDK9 compatibility with TYPE_USE on collection fields.
+git bisect good 45a3b39c401bc3a72eed474af06deff2d143a9ac
+# bad: [83283218dc44ca1e54f9e6425992391bfcd22424] HHH-12540 - Fix test
+git bisect good 83283218dc44ca1e54f9e6425992391bfcd22424
